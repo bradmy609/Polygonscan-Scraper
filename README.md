@@ -1,4 +1,9 @@
-##*Polygon Token Scraper*##
+Document Title
+==============
+
+***Scraper***
+
+**Author:** *Bradley J.M.*
 
 This program will scrape all of the top market cap tokens' data from the Polygonscanner website. It will then use the scraped data to populate a local database.
 
