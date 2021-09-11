@@ -12,4 +12,4 @@ It will then email any new tokens', along with any unusually strong price perfor
 
 To gather the data and populate a local database, download all dependencies and then run either the execute.py file or the execute.ipynb.
 
-This will populate a database in the project folder named 'Polygonscan' with a table titled 'poly{date}_{hour}'. The date will be formatted as YYMMDD and the hour will be formatted as HH.
+This will populate a database in the project folder named 'Polygonscan' with a table titled 'poly{date}_{hour}'. The date will be formatted as yyMMDD and the hour will be formatted as HH.
