@@ -1,11 +1,11 @@
-Document Title
+Polygon Blockchain Monitor
 ==============
 
-***Scraper***
+***Polygon Scan Scraper***
 
 **Author:** *Bradley J.M.*
 
-This program will scrape all of the top market cap tokens' data from the Polygonscanner website. It will then use the scraped data to populate a local database.
+The goal of this program is to scrape all of the top market cap tokens' data from the Polygonscanner website. Then we will use the scraped data to populate a local database.
 
 In the coming weeks, this program will be updated to monitor strong price performance and any new tokens breaking into the top tokens tracked by the polygonscanner's tokens' page. 
 It will then email any new tokens', along with any unusually strong price performance to the subscribers. To subscribe please visit the CryptoFarmBets telegram/subreddit.
