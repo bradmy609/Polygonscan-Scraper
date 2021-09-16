@@ -1,8 +1,5 @@
-from scraper import request_content, set_soup, get_page_links, set_next_url, local
+from scraper import request_content, set_soup, get_page_links, set_next_url
 from restructureData import set_dict, update_dict, restructure_dict, rearrange_dict, create_df
-import pandas as pd
-from sqlalchemy import create_engine
-from datetime import datetime
 
 def scrape_data(url):
     res, date_list, time_list = request_content(url)

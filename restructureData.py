@@ -1,5 +1,5 @@
 import pandas as pd
-import scraper as scraper
+from random import randrange
 
 def set_dict(rows):
     d = {
@@ -11,10 +11,6 @@ def set_dict(rows):
     'market_cap': [], 
     'holders': []
     }
-    
-    # The following commented out section is the start of a strategy for definining
-    # the dictionary keys passively by looping through soup object. To improve the file
-    # finish that method when you are done being lazy.
     '''
     p = {}
     
@@ -26,7 +22,10 @@ def set_dict(rows):
         current = row.td
         try:
             for key, value in d.items():
-                value.append(current.text.strip())
+                data = current.text.strip()
+                if data == '-':
+                    data += str(randrange(200, 1000))
+                value.append(data)
                 current = current.next_sibling
         except:
             continue

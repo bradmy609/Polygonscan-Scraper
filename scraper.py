@@ -1,9 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
-import pathlib
-
-local = pathlib.Path(__file__).parent.resolve()
 
 def request_content(url):
     res = requests.get(url).content
@@ -38,7 +35,7 @@ def set_soup(res):
 
     contract_list = []
     for item in link_list:
-        contract_link = 'https://polygonscan.com/tokens/' + item
+        contract_link = 'https://polygonscan.com/tokens' + item
         contract_list.append(contract_link)
         
     
