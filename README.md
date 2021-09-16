@@ -5,11 +5,6 @@ Polygon Blockchain Monitor
 
 **Author:** *Bradley J.M.*
 
-The goal of this program is to scrape all of the top market cap tokens' data from the Polygonscanner website. Then we will use the scraped data to populate a local database.
+The goal of this program is to scrape all of the top market cap tokens' data from the https://polygonscan/tokens website. This program will email the new tokens and the tokens with the strongest price performance to everyone on the email list.
 
-In the coming weeks, this program will be updated to monitor strong price performance and any new tokens breaking into the top tokens tracked by the polygonscanner's tokens' page. 
-It will then email any new tokens', along with any unusually strong price performance to the subscribers. To subscribe please visit the CryptoFarmBets telegram/subreddit.
-
-To gather the data and populate a local database, download all dependencies and then run either the execute.py file or the execute.ipynb.
-
-This will populate a database in the project folder named 'Polygonscan' with a table titled 'poly{date}_{hour}'. The date will be formatted as yyMMDD and the hour will be formatted as HH.
+To gather the data and populate a local database, download all dependencies and then run the runScraper.py file or the runScraper.ipynb file. This will populate a local SQL database, 'polygonscan.db', with a table titled 'poly{date}_{hour}'. The date will be formatted as yyMMDD and the hour will be formatted as HH. Each subsequent download will be added to the .db file as it's own table, so long as the hour has changed by at least 1, otherwise it will overwrite the previous table.
